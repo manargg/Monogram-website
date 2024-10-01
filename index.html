@@ -14,72 +14,33 @@
 
      <div class="logo">
      <a href="#">  
+     <img src="Screenshot 2024-10-01 175841.png">
      
-        <img src="Screenshot 2024-10-01 175841.png">
-           Monogram   </a>  </div> 
+      Monogram        <br><br></a>  </div> 
 <!-------------------------------------------------------->
 
       <div class="menu-icon" onclick="toggleMenu()">
         &#9776; <!-- رمز الثلاث شحنات -->
     </div>
-    <div class="links" id="linkes">
+    <div class="links"  >
         <a href="#">  How it works</a>
-        <a href="javascript:void(0);" class="dropdown-toggle">Workflows <span>&#x25BC;</span></a>
-        <div class="dropdown-content">
-            <a href="#">audio console 1</a>
-            <a href="#">photo console</a>
-            <a href="#">video console</a>
-            <a href="#">mini console</a>
-        </div>
+         <a href="#">Workflows ▼</a>
         <a href="#">Download</a>
         <a href="#">Blog</a>
         <a href="#">Support </a>
         <a href="#">Shop</a>
+        <i class='bx bx-shopping-bag'></i> 
+          <a href="#">USD ▼</a>
     </div> 
 
 <!-------------------------------------------------------->
-      <div class="i-us">
-        <i class='bx bx-shopping-bag'  style=' color: #e9a38e;'></i>
-        <div class="dropdown">
-            <a href="javascript:void(0);" class="dropdown-toggle">USD <span>&#x25BC;</span></a>
-            <div class="dropdown-content">
-                <li>USD</li>
-                <li>EUR</li>
-                <li>AUD</li>
-            </div></div>
-
-      </div>
-<!-------------------------------------------------------->
+     
 </div>
     </nav>
       
 
 
-
-    <script> document.addEventListener('DOMContentLoaded', function () {
-        const dropdownToggle = document.querySelector('.dropdown-toggle');
-        const dropdownContent = document.querySelector('.dropdown-content');
-    
-        dropdownToggle.addEventListener('click', function () {
-            dropdownContent.classList.toggle('show'); 
-        });
-    
-     
-        window.addEventListener('click', function(event) {
-            if (!dropdownToggle.contains(event.target) && !dropdownContent.contains(event.target)) {
-                dropdownContent.classList.remove('show');
-            }
-        });
-    });
-
-    function toggleMenu() {
-    const links = document.getElementById("linkes");
-    links.classList.toggle("show");
-}
-
-
-     </script>
-    
+ 
 
     <!---------------------------background img --------------------->
     <div  class="background">
@@ -308,6 +269,23 @@
     </div>
   </section>
 
+
+  <!----------------------------footer------------------------------------------------>
+
+  <div class="footer">
+
+
+
+
+
+
+
+
+
+
+
+    
+  </div>
     
 </body>
 </html>
