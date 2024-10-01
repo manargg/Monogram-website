@@ -45,25 +45,18 @@ body{
 i{  color: #ff8b68;}
 /*****************************************/
 
-.links{
-    width: 40%;
-    height: 60px;
-    align-items: center;
-    margin: auto;
-     
-    text-decoration: none;
-    display: flex;  
-    justify-content: center; 
-
-text-transform: uppercase;}
-
-.links a {
-    color: #ff8b68;  
+.links{ color: #ff8b68;  
     text-decoration: none;  
     padding-top: 20px;
     font-size: 0.8em;;
-    
-}
+    width: 40%;
+    height: 60px;
+    text-decoration: none;
+    display: flex;  
+    justify-content: center;
+      align-items: center;
+   text-transform: uppercase;}
+ 
 
 .links a:hover {
     color: burlywood;  
