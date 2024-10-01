@@ -2,15 +2,92 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.9/css/boxicons.min.css'>
     <meta charset="UTF-8" />
     <title>Monogram</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!------------------------header---------------------------->
+    <nav>
+<div class="header">
+
+     <div class="logo">
+     <a href="#">
+        <img src="Screenshot 2024-10-01 175841.png">
+         <a href="#">   <p >Monogram</p> </a>  </a> </div> 
+<!-------------------------------------------------------->
+
+      <div class="menu-icon" onclick="toggleMenu()">
+        &#9776; <!-- رمز الثلاث شحنات -->
+    </div>
+    <div class="links" id="links">
+        <a href="#">  How it works</a>
+        <a href="javascript:void(0);" class="dropdown-toggle">Workflows <span>&#x25BC;</span></a>
+        <div class="dropdown-content">
+            <a href="#">audio console 1</a>
+            <a href="#">photo console</a>
+            <a href="#">video console</a>
+            <a href="#">mini console</a>
+        </div>
+        <a href="#">Download</a>
+        <a href="#">Blog</a>
+        <a href="#">Support </a>
+        <a href="#">Shop</a>
+    </div> 
+
+<!-------------------------------------------------------->
+      <div class="i-us">
+        <i class='bx bx-shopping-bag'  style=' color: #e9a38e;'></i>
+        <div class="dropdown">
+            <a href="javascript:void(0);" class="dropdown-toggle">USD <span>&#x25BC;</span></a>
+            <div class="dropdown-content">
+                <li>USD</li>
+                <li>EUR</li>
+                <li>AUD</li>
+            </div></div>
+
+      </div>
+<!-------------------------------------------------------->
+</div>
+    </nav>
+      
 
 
 
+    <script> document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const dropdownContent = document.querySelector('.dropdown-content');
+    
+        dropdownToggle.addEventListener('click', function () {
+            dropdownContent.classList.toggle('show'); 
+        });
+    
+     
+        window.addEventListener('click', function(event) {
+            if (!dropdownToggle.contains(event.target) && !dropdownContent.contains(event.target)) {
+                dropdownContent.classList.remove('show');
+            }
+        });
+    });
 
+    function toggleMenu() {
+    const links = document.getElementById("links");
+    links.classList.toggle("show");
+}
+
+
+     </script>
+    
+
+    <!---------------------------background img --------------------->
+    <div  class="background">
+
+        
+    </div>
+    
+    
+    
 
 
 
