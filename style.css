@@ -48,14 +48,11 @@ i{  color: #ff8b68;}
 .links{
     width: 40%;
     height: 60px;
-    align-items: center;
-    margin: auto;
-     
     text-decoration: none;
     display: flex;  
-    justify-content: center; 
-
-text-transform: uppercase;}
+    justify-content: center;
+      align-items: center;
+   text-transform: uppercase;}
 
 .links a {
     color: #ff8b68;  
