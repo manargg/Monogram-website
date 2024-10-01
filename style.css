@@ -141,7 +141,19 @@ height: 500px;
 background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.6)), url(https://monogramcc.com/static/9a0b554db1990565457610c5f83b3ad7/91943/shop_cta_xl_896f6b8270.webp);
  background-repeat: no-repeat;
  background-size: 100% 100%;
+ margin-top: 0%;
 
+}
+
+ .background-text  {
+
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    color: #ff8b68; 
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;  
 }
 /*-------------photos-list-1-sec--------------*/
 .photo-list-1-sec{
