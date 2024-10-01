@@ -217,9 +217,35 @@ background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.6)), url(https://mono
     text-transform: capitalize;
     color: #6c757d ;
     
+}
+
+.list-header button{
+    text-transform: capitalize;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 2px 20px;
+    color: #f0efed;
+    background-color: #1a2456;
+    display: none;
+}
+.list-header button:hover{
+    cursor: pointer;
    
 }
+.img-list:hover button{
+    display: inline;
+}
+.img-list:hover .money{
+    display: none;
+}
+
+
+
+
+
 /*----------------images hover section one-------------*/
+
 .item-1 img:hover{
     content: url(./images/Everyday-Bundle-Mocks-horizontal_1920x1281_crop_center.jpg.webp);
 }
@@ -337,9 +363,6 @@ background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.6)), url(https://mono
 }
 
   
-
-
-
 
 
 /*--------------------------------Media-Query-----------------------------------*/
