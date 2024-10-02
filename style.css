@@ -446,11 +446,12 @@ ul {
     padding: 0;  
 }
 
-h3 {
+h5 { font-size:  medium;
+    color: #d38871;
     margin-bottom: 10px;  
+    text-transform:  uppercase;
 }
-
-input[type="email"] {
+ input[type="email"] {
     width: calc(90% - 90px); 
     border-color: #e9a38e;
     background-color: #1a2456;
