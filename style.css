@@ -421,6 +421,7 @@ background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.6)), url(https://mono
     background-color: #1a2456;
     color: #e9a38e;
     font-size: 0.8em;
+    line-height: 1.8;
  }
  
 .parts > div {
