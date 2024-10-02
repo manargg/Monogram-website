@@ -13,34 +13,69 @@
 <div class="header">
 
      <div class="logo">
-     <a href="#">  
-     <img src="Screenshot 2024-10-01 175841.png">
+     <div class="imeg">
+
+         <img src="Screenshot 2024-10-01 175841.png">
+     </div>
+    <div class="text-mono">    <a href="#">  Monogram        </a></div>
      
-      Monogram        <br><br></a>  </div> 
+    </div> 
 <!-------------------------------------------------------->
 
       <div class="menu-icon" onclick="toggleMenu()">
-        &#9776; <!-- رمز الثلاث شحنات -->
+        &#9776; 
     </div>
     <div class="links"  >
         <a href="#">  How it works</a>
-         <a href="#">Workflows ▼</a>
+          <div class="dropdown">
+           <a>  <a href="#" onclick="toggleDropdown()">Workflows  ▼</a>
+            <div id="myDropdown" class="dropdown-content">
+                <p><a href="#">audio console</a></p>
+                <p><a href="#">photo console</a></p>
+                <p><a href="#">video console</a></p>
+                <p><a href="#">mini console</a></p>
+            </div>
+        </div>
+        
+        
         <a href="#">Download</a>
         <a href="#">Blog</a>
         <a href="#">Support </a>
         <a href="#">Shop</a>
-        <i class='bx bx-shopping-bag'></i> 
+       <a href="#" ><i class='bx bx-shopping-bag' style="color:  none;    
+        background-color:none;
+ font-size:  20px;
+ border: none;
+        border-radius: 45%;"></i> 
           <a href="#">USD ▼</a>
+          
     </div> 
 
-<!-------------------------------------------------------->
      
 </div>
     </nav>
       
+<!----------------------------JS for header [link-Workflows]---------------------------->
 
 
- 
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown a')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    
 
     <!---------------------------background img --------------------->
     <div  class="background">
@@ -279,18 +314,69 @@
 
   <div class="footer">
 
+    <div class="parts"> 
+  <div class="part1">
+    <h3>monogram</h3>
+    <ul>
+        <li><a>305 King St W. Suite 502 Kitchener, ON Canada</a></li>
+    </ul>        
 
 
-
-
-
-
-
-
+  </div>
+  <div class="part2">
+    <h3>quick links</h3>
+    <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">how it works</a></li>
+        <li><a href="#">shop</a></li>
+        <li><a href="#">download</a></li>
+    </ul>        
 
 
     
   </div>
+  <div class="part3">
+
+    <h3>help</h3>
+    <ul>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">support center</a></li>
+        <li><a href="#">shipping and sales</a></li>
+    </ul>        
     
+  </div>
+  <div class="part4">
+    <h3>information</h3>
+    <ul>
+    <li><a href="#">about us</a></li>
+    <li><a href="#">work with us</a></li>
+    <li><a href="#">privacy policy</a></li>
+    <li><a href="#">terms of use</a></li>
+    <li><a href="#">terms of sale</a></li>
+    <li><a href="#">press kit</a></li>
+    </ul>
+
+    
+  </div>
+  <div class="part5">
+    <h3>subscribe to monogram</h3>
+    <ul>
+       <li><a>Master productivity with Creative Console and get all the latest Monogram news.</a></li>
+       <input type="email" value="Email Adress">
+       <button>Submit</button>
+       
+       
+   </ul> <a href="#"><i class='bx bxl-instagram'   ></i></a>
+   <a href="#"><i class='bx bxl-twitter'  ></i></a>
+  
+   <a href="#"><i class='bx bxl-facebook-circle'    ></i></a>
+   
+   <a href="#"><i class='bx bxl-youtube'   ></i></a>  
+   <p>&copy; Monogram 2024</p>
+  </div>
+ 
+</div>
+  </div>
+
 </body>
 </html>
