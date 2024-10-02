@@ -19,7 +19,7 @@ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 /*****************************header ************************************/
 .header {
-    width: 90%;
+    width: 95%;
     height: auto;
     background-color: #1a2456;
     display: flex;
@@ -420,8 +420,9 @@ background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.6)), url(https://mono
     justify-content: space-between;  
     background-color: #1a2456;
     color: #e9a38e;
-}
-
+    font-size: 0.8em;
+ }
+ 
 .parts > div {
     flex: 1; 
     margin: 0 10px;  
@@ -442,12 +443,13 @@ i{
 i:active{
     transform: scale(1.1); 
 }
+
 ul {
     list-style-type: none; 
-    padding: 0;  
+    padding-left: 0;
+    
 }
-
-h5 { font-size:  medium;
+ h5 { font-size:  medium;
     color: #d38871;
     margin-bottom: 10px;  
     text-transform:  uppercase;
@@ -472,8 +474,7 @@ button:active{
     background-color: #4a58a2;
     transform: scale(1.1); 
 }
-
-
+ 
 /*--------------------------------Media-Query-Footer-----------------------------------*/
 
 
